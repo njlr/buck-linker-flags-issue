@@ -5,7 +5,7 @@ Buck should be able to link a precompiled library using `linker_flags`. This pro
 To create `libfoo`:
 
 ```bash=
-clang++ foo.cpp -o foo
+clang++ -c foo.cpp -o foo
 ar -rv libfoo.a foo.o
 ```
 
